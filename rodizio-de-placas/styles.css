@@ -1,0 +1,153 @@
+:root {
+  --ff-parisienne: "Parisienne", cursive;
+  --ff-montserrat: "Montserrat", sans-serif;
+  --ff-lora: "Lora", serif;
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-rubik-dirt: "Rubik Dirt", cursive;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: var(--ff-roboto);
+  background-color: #e5dab3;
+}
+.logo {
+  font-family: var(--ff-rubik-dirt);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  padding: 0 1.2rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.nav-links li {
+  margin: 0px 15px;
+}
+
+
+.form {
+    margin-top: 20px;
+    font-size: large;
+    display: flex;
+    justify-items: center;
+}
+
+label, select, input, button {
+    margin: 5px;
+    font-size: large;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-content {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.header-content h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header-content button {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background: #78c7dd;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.header-content button:hover {
+  background: #78c7dd;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container input,
+.container button {
+  font-family: var(--ff-roboto);
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.container input {
+  width: 100px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color:#78c7dd;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #78c7dd;
+  }
+  
+  button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #78c7dd;
+  }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
